@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phaneendra Kanduri — Cybersecurity & AI/ML & Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <!-- CERTIFICATE MODAL -->
+  <div id="certModal" class="modal-overlay" onclick="closeCertModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+
+    <button class="modal-close" onclick="closeCertModal()">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- ✅ USE IMAGE -->
+    <img id="certFrame" class="cert-image">
+
+    </div>
+  </div>
+
+  <script>
+  function openCertModal(path) {
+    document.getElementById("certFrame").src = path;
+    document.getElementById("certModal").style.display = "flex";
+  }
+
+  function closeCertModal() {
+    document.getElementById("certModal").style.display = "none";
+    document.getElementById("certFrame").src = "";
+  }
+  </script>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">PK<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" onclick="closeMobile()">Home</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#research" onclick="closeMobile()">Research</a></li>
+      <li><a href="#certifications" onclick="closeMobile()">Certifications</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, World! 👋 I'm</p>
+      <h1 class="hero-name">Phaneendra<br /><span class="glow-text">Kanduri</span></h1>
+      <div class="hero-roles">
+        <span class="role-tag">🔐 Cybersecurity</span>
+        <span class="role-tag">🤖 AI / ML</span>
+        <span class="role-tag">💻 Full Stack</span>
+      </div>
+      <p class="hero-tagline" id="typingText"></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="assets/documents/resume.pdf" download class="btn btn-outline">Download Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:kphaneendra2005@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/phaneendra-kanduri-067520280/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Phaneendra2005" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-ring">
+        <div class="profile-img-wrap">
+          <img src="assets/images/profile.jpg" alt="Phaneendra Kanduri" />
+        </div>
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+      </div>
+      <div class="floating-badge badge-1"><i class="fas fa-shield-alt"></i> Security</div>
+      <div class="floating-badge badge-2"><i class="fas fa-brain"></i> ML/AI</div>
+      <div class="floating-badge badge-3"><i class="fas fa-code"></i> Full Stack</div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-tag">01 / About</span>
+      <h2>Who Am <span class="glow-text">I?</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="glass-card about-card">
+        <p class="about-text">Results-driven Computer Science student specializing in <strong>Cybersecurity</strong>, with hands-on experience building <strong>ML-powered security systems</strong>, full-stack web applications, and AI integrations. Achieved <strong>99.9% phishing detection accuracy</strong> across 100K+ URLs. Passionate about secure, scalable software aligned with modern coding standards.</p>
+        <p class="about-text">Currently pursuing B.Tech in CSE (Cyber Security) at Rajeev Gandhi Memorial College of Engineering and Technology, Nandyal — expected graduation <strong>May 2026</strong>, with a CGPA of <strong>8.20/10</strong>.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num glow-text">3+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num glow-text">2</span><span class="stat-label">Internships</span></div>
+          <div class="stat"><span class="stat-num glow-text">99.9%</span><span class="stat-label">ML Accuracy</span></div>
+          <div class="stat"><span class="stat-num glow-text">15+</span><span class="stat-label">Certificates</span></div>
+        </div>
+      </div>
+      <div class="about-info-col">
+        <div class="glass-card info-card">
+          <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+          <p>B.Tech CSE (Cyber Security)</p>
+          <p class="muted">RGMCET, Nandyal | CGPA: 8.20 | 2026</p>
+        </div>
+        <div class="glass-card info-card">
+          <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+          <p>Andhra Pradesh, India</p>
+          <p class="muted">Open to Remote & Relocation</p>
+        </div>
+        <div class="glass-card info-card">
+          <h4><i class="fas fa-envelope"></i> Contact</h4>
+          <p>kphaneendra2005@gmail.com</p>
+          <p class="muted">+91 8247504435</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <span class="section-tag">02 / Skills</span>
+      <h2>Tech <span class="glow-text">Arsenal</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="glass-card skill-category">
+        <h3><i class="fas fa-code"></i> Languages</h3>
+        <div class="skill-badges">
+          <span class="badge">Python</span><span class="badge">JavaScript</span><span class="badge">C</span><span class="badge">C++</span>
+        </div>
+      </div>
+      <div class="glass-card skill-category">
+        <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+        <div class="skill-badges">
+          <span class="badge">React.js</span><span class="badge">Node.js</span><span class="badge">Express.js</span><span class="badge">Django</span><span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">Bootstrap</span>
+        </div>
+      </div>
+      <div class="glass-card skill-category">
+        <h3><i class="fas fa-brain"></i> AI / ML</h3>
+        <div class="skill-badges">
+          <span class="badge">TensorFlow</span><span class="badge">Scikit-learn</span><span class="badge">Pandas</span><span class="badge">NumPy</span>
+        </div>
+      </div>
+      <div class="glass-card skill-category">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <div class="skill-badges">
+          <span class="badge">MongoDB</span><span class="badge">MySQL</span><span class="badge">SQLite</span>
+        </div>
+      </div>
+      <div class="glass-card skill-category">
+        <h3><i class="fas fa-tools"></i> Tools & Cloud</h3>
+        <div class="skill-badges">
+          <span class="badge">Git</span><span class="badge">GitHub</span><span class="badge">AWS</span><span class="badge">IBM Cloud</span><span class="badge">VS Code</span>
+        </div>
+      </div>
+      <div class="glass-card skill-category">
+        <h3><i class="fas fa-shield-alt"></i> CS Fundamentals</h3>
+        <div class="skill-badges">
+          <span class="badge">Data Structures</span><span class="badge">Algorithms</span><span class="badge">OOP</span><span class="badge">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-header">
+      <span class="section-tag">03 / Experience</span>
+      <h2>Work <span class="glow-text">Experience</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card">
+          <div class="exp-header">
+            <div>
+              <h3>Generative AI Intern</h3>
+              <p class="company"><i class="fas fa-building"></i> Smartbridge &nbsp;|&nbsp; Remote</p>
+            </div>
+            <span class="exp-date">May 2025 – July 2025</span>
+          </div>
+          <ul class="exp-points">
+            <li>Architected and deployed an AI-powered <strong>Smart City Assistant</strong> using React.js, Node.js, MongoDB, and IBM Granite LLM — cutting response time to under <strong>3 seconds</strong>.</li>
+            <li>Designed <strong>JWT-secured REST APIs</strong>, improving system reliability and enabling seamless front-to-back communication.</li>
+            <li>Tested and optimized APIs to ensure scalability and production-level reliability.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>IBM Granite LLM</span><span>JWT</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card">
+          <div class="exp-header">
+            <div>
+              <h3>AI & ML Intern</h3>
+              <p class="company"><i class="fas fa-building"></i> Smartbridge &nbsp;|&nbsp; Remote</p>
+            </div>
+            <span class="exp-date">6 Months</span>
+          </div>
+          <ul class="exp-points">
+            <li>Completed an intensive <strong>6-month AI & ML internship</strong> focused on building and deploying real-world machine learning solutions.</li>
+            <li>Worked on model training, data preprocessing, feature engineering, and deployment pipelines.</li>
+            <li>Gained hands-on expertise in <strong>TensorFlow, Scikit-learn</strong>, and cloud-based AI workflows.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>ML Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-tag">04 / Projects</span>
+      <h2>Featured <span class="glow-text">Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="glass-card project-card">
+        <div class="project-icon"><i class="fas fa-shield-virus"></i></div>
+        <h3>PhishGuard</h3>
+        <p class="project-subtitle">Phishing Detection System</p>
+        <p class="project-desc">Engineered an ML phishing detection engine trained on <strong>100K+ URLs</strong>, achieving <strong>99.9% accuracy</strong> using a feature-based Random Forest classification model. Deployed as a live real-time threat scoring web app.</p>
+        <div class="project-tags"><span>Python</span><span>ML</span><span>Random Forest</span><span>Flask</span></div>
+        <div class="project-links">
+          <a href="https://phishguard-kanduri.netlify.app/" target="_blank" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          <a href="https://github.com/Phaneendra2005/phishguard" target="_blank" class="btn-sm btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+      <div class="glass-card project-card">
+        <div class="project-icon"><i class="fas fa-microscope"></i></div>
+        <h3>HematoVision</h3>
+        <p class="project-subtitle">Blood Cell Classifier</p>
+        <p class="project-desc">Optimized CNN deep learning model via hyperparameter tuning — <strong>boosting classification accuracy from 82% → 95%</strong>. Built a Flask inference API delivering real-time predictions in under <strong>1.2s latency</strong>.</p>
+        <div class="project-tags"><span>Python</span><span>CNN</span><span>TensorFlow</span><span>Flask</span></div>
+        <div class="project-links">
+          <a href="https://github.com/Phaneendra2005/HematoVision-AI" target="_blank" class="btn-sm btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+      <div class="glass-card project-card">
+        <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Jobby App</h3>
+        <p class="project-subtitle">Job Search Platform</p>
+        <p class="project-desc">Built a production-grade React job platform with REST API integration, dynamic filtering, routing, and state management. Implemented persistent client-side storage and responsive UI.</p>
+        <div class="project-tags"><span>React.js</span><span>REST API</span><span>JavaScript</span><span>CSS</span></div>
+        <div class="project-links">
+          <a href="https://dashing-salmiakki-48a3e1.netlify.app/" target="_blank" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          <a href="https://github.com/Phaneendra2005/jobby-app" target="_blank" class="btn-sm btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <div class="section-header">
+      <span class="section-tag">05 / Research</span>
+      <h2>Research <span class="glow-text">Publication</span></h2>
+    </div>
+    <div class="glass-card research-card">
+      <div class="research-icon"><i class="fas fa-flask"></i></div>
+      <div class="research-content">
+        <span class="research-year">2026</span>
+        <h3>ML-Based Phishing URL Detection Using Lexical & Structural Features</h3>
+        <p>Published research on a <strong>Random Forest classifier</strong> trained on <strong>100,000+ URLs</strong>, achieving <strong>99.9% accuracy</strong> in detecting phishing attempts through advanced lexical and structural feature analysis.</p>
+        <div class="research-tags">
+          <span>Machine Learning</span><span>Cybersecurity</span><span>Random Forest</span><span>URL Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="section-header">
+      <span class="section-tag">06 / Certifications</span>
+      <h2>Certificates & <span class="glow-text">Achievements</span></h2>
+    </div>
+    <p class="cert-hint"><i class="fas fa-hand-pointer"></i> Click any certificate to view it</p>
+
+    <h3 class="cert-group-title">🏅 Professional Certifications</h3>
+    <div class="certs-grid">
+      <div class="glass-card cert-card" onclick="openCertModal('assets/certs/AWS_Certified_Cloud_Practitioner.jpg')">
+      <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
+      <h4>AWS Certified Cloud Practitioner</h4>
+      <p>Amazon Web Services</p>
+      <span class="cert-year">2025</span>
+      <span class="cert-view-hint"><i class="fas fa-eye"></i> Click to View</span>
+    </div>
+
+      <div class="glass-card cert-card" 
+          onclick="window.open('https://www.credly.com/badges/2086d63b-baff-4ae4-b733-bf0de6eb4608/public_url', '_blank')">
+              
+        <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
+        <h4>AWS Educate Generative AI</h4>
+        <p>Amazon Web Services</p>
+        <span class="cert-year">2025</span>
+        <span class="cert-view-hint">
+          <i class="fas fa-eye"></i> Click to View
+        </span>
+      </div>
+      <!-- AWS Cloud Foundations -->
+      <div class="glass-card cert-card" onclick="openCertModal('assets/certs/CloudFoundationsAws.jpg')">
+        <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
+        <h4>AWS Academy Cloud Foundations</h4>
+        <p>Amazon Web Services</p>
+        <span class="cert-year">2023</span>
+        <span class="cert-view-hint"><i class="fas fa-eye"></i> Click to View</span>
+      </div>
+
+      <!-- MCP -->
+      <div class="glass-card cert-card" onclick="openCertModal('assets/certs/MCPPRojectCompletion.jpg')">
+        <div class="cert-icon nxt"><i class="fas fa-rocket"></i></div>
+        <h4>MCP Project Completion</h4>
+        <p>NxtWave Academy</p>
+        <span class="cert-year">2025</span>
+        <span class="cert-view-hint"><i class="fas fa-eye"></i> Click to View</span>
+      </div>
+
+      <!-- RPA -->
+      <div class="glass-card cert-card" onclick="openCertModal('assets/certs/AutomationAnywhere.jpg')">
+        <div class="cert-icon rpa"><i class="fas fa-robot"></i></div>
+        <h4>RPA Workshop</h4>
+        <p>Automation Anywhere</p>
+        <span class="cert-year">2026</span>
+        <span class="cert-view-hint"><i class="fas fa-eye"></i> Click to View</span>
+      </div>
+
+      <!-- Deloitte -->
+      <div class="glass-card cert-card" onclick="openCertModal('assets/certs/Deloitte_Cyber_Simulation_Certificate.jpg')">
+        <div class="cert-icon deloitte"><i class="fas fa-user-secret"></i></div>
+        <h4>Cyber Job Simulation</h4>
+        <p>Deloitte (via Forage)</p>
+        <span class="cert-year">March 2026</span>
+        <span class="cert-view-hint"><i class="fas fa-eye"></i> Click to View</span>
+      </div>
+    </div>
+
+    <h3 class="cert-group-title">📚 NxtWave Course Completions</h3>
+    <div class="nxtwave-grid">
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/StaticWebsite.jpg')">
+        <i class="fab fa-html5"></i>
+        <span>Static Website</span>
+        <span class="nxt-date">Jan 2025</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/ResponsiveWebsite.jpg')">
+        <i class="fas fa-mobile-alt"></i>
+        <span>Responsive Website</span>
+        <span class="nxt-date">Jan 2025</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/sql.jpg')">
+        <i class="fas fa-database"></i>
+        <span>SQL / Databases</span>
+        <span class="nxt-date">Feb 2025</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/ReactJs.jpg')">
+        <i class="fab fa-react"></i>
+        <span>React JS</span>
+        <span class="nxt-date">Mar 2026</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/nodejs.jpg')">
+        <i class="fab fa-node-js"></i>
+        <span>Node.js</span>
+        <span class="nxt-date">Nov 2025</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/python.jpg')">
+        <i class="fab fa-python"></i>
+        <span>Python Foundations</span>
+        <span class="nxt-date">Aug 2025</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/DeveloperFoundations.jpg')">
+        <i class="fas fa-terminal"></i>
+        <span>Developer Foundations</span>
+        <span class="nxt-date">Nov 2025</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/DynamicWebApplication.jpg')">
+        <i class="fab fa-js"></i>
+        <span>Dynamic Web App</span>
+        <span class="nxt-date">Aug 2025</span>
+      </div>
+
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/JSEssentials.jpg')">
+        <i class="fab fa-js-square"></i>
+        <span>JS Essentials</span>
+        <span class="nxt-date">Nov 2025</span>
+      </div>
+
+      <!-- ✅ NEW CERTIFICATE -->
+      <div class="glass-card nxt-cert" onclick="openCertModal('assets/certs/ResponsiveWebDesign.jpg')">
+        <i class="fas fa-laptop-code"></i>
+        <span>Responsive Web Design</span>
+        <span class="nxt-date">2025</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA CURRICULARS -->
+  <section id="extracurricular" class="section">
+    <div class="section-header">
+      <span class="section-tag">07 / Activities</span>
+      <h2>Extra <span class="glow-text">Curriculars</span></h2>
+    </div>
+    <div class="extra-grid">
+      <div class="glass-card extra-card">
+        <div class="extra-icon"><i class="fab fa-google"></i></div>
+        <h4>GDSC Coding Gala</h4>
+        <p>Google Developer Student Clubs — Competed in coding challenges and collaborative development events.</p>
+      </div>
+      <div class="glass-card extra-card">
+        <div class="extra-icon"><i class="fas fa-user-secret"></i></div>
+        <h4>Advanced Ethical Hacking Workshop</h4>
+        <p>Performed real-world vulnerability assessments and penetration testing on simulated systems.</p>
+      </div>
+      <div class="glass-card extra-card">
+        <div class="extra-icon"><i class="fas fa-robot"></i></div>
+        <h4>LLMs & Agentic AI Masterclass</h4>
+        <p>NxtWave — Deep dive into Large Language Models, prompt engineering, and AI agent architecture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <span class="section-tag">08 / Contact</span>
+      <h2>Let's <span class="glow-text">Connect</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="glass-card contact-info">
+        <p class="contact-intro">I'm currently open to <strong>internships, full-time roles, and freelance projects</strong>. Feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="mailto:kphaneendra2005@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i><span>kphaneendra2005@gmail.com</span>
+          </a>
+          <a href="tel:+918247504435" class="contact-item">
+            <i class="fas fa-phone"></i><span>+91 8247504435</span>
+          </a>
+          <a href="https://www.linkedin.com/in/phaneendra-kanduri-067520280/" target="_blank" class="contact-item">
+            <i class="fab fa-linkedin"></i><span>linkedin.com/in/phaneendra-kanduri</span>
+          </a>
+          <a href="https://github.com/Phaneendra2005" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i><span>github.com/Phaneendra2005</span>
+          </a>
+        </div>
+      </div>
+      <div class="glass-card contact-form-card">
+        <h3>Send a Message</h3>
+        <div id="formAlert" class="form-alert" style="display:none;"></div>
+        <div class="form-group">
+          <input type="text" id="senderName" placeholder="Your Name" class="form-input" />
+        </div>
+        <div class="form-group">
+          <input type="email" id="senderEmail" placeholder="Your Email" class="form-input" />
+        </div>
+        <div class="form-group">
+          <textarea id="senderMessage" placeholder="Your Message" class="form-input" rows="4"></textarea>
+        </div>
+        <button class="btn btn-primary" id="sendBtn" onclick="sendEmail()" style="width:100%">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed & Built by <span class="glow-text">Phaneendra Kanduri</span> &copy; 2026</p>
+    <p class="footer-sub">Cybersecurity · AI/ML · Full Stack Development</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
