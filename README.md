@@ -2,9 +2,6 @@
 
 > **Cybersecurity · AI/ML · Full Stack Developer**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-00f5ff?style=for-the-badge)](https://phaneendra2005.github.io)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-b044ff?style=for-the-badge&logo=github)](https://github.com/Phaneendra2005)
-
 ---
 
 ## ✨ About This Portfolio
