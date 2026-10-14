@@ -24,6 +24,365 @@
   --radius: 16px;
 }
 
+
+
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  padding: 0.55rem 1rem;
+  background: rgba(0, 245, 255, 0.06);
+  border: 1px solid rgba(0, 245, 255, 0.25);
+  border-radius: 50px;
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.certificate-link:hover {
+  background: rgba(0, 245, 255, 0.12);
+  border-color: var(--cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+
+/* =========================================================
+   PROJECTS — NATURAL PAGE SCROLLING
+   Dark Navy + Cyan + Purple Glassmorphism
+   ========================================================= */
+
+/* Projects container: scroll with the entire webpage */
+.projects-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 100%;
+  max-height: none;
+  height: auto;
+
+  overflow: visible;
+
+  padding: 4px 4px 16px;
+
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+  overscroll-behavior: auto;
+}
+
+/* Each project occupies its own row */
+.project-slide {
+  flex: 0 0 auto;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Project glass card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  width: 100%;
+  height: auto;
+  min-width: 0;
+  box-sizing: border-box;
+
+  padding: 2rem;
+}
+
+/* Project icon */
+.project-icon {
+  font-size: 2.5rem;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+/* Project title */
+.project-card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--white);
+}
+
+/* Project subtitle */
+.project-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--purple);
+  overflow-wrap: anywhere;
+}
+
+/* Project description */
+.project-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.project-desc strong {
+  color: var(--white);
+}
+
+/* Technology tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-tags span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+
+  background: rgba(176, 68, 255, 0.1);
+  border: 1px solid rgba(176, 68, 255, 0.25);
+  color: var(--purple);
+
+  overflow-wrap: anywhere;
+}
+
+/* Project action links */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  margin-top: auto;
+  padding-top: 0.2rem;
+}
+
+.btn-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  color: var(--cyan);
+
+  text-decoration: none;
+  white-space: normal;
+
+  transition: var(--transition);
+}
+
+.btn-sm:hover {
+  background: rgba(0, 245, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.2);
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: rgba(176, 68, 255, 0.3);
+  color: var(--purple);
+}
+
+.btn-ghost:hover {
+  background: rgba(176, 68, 255, 0.1);
+  box-shadow: 0 0 10px rgba(176, 68, 255, 0.2);
+}
+
+/* Keyboard accessibility */
+.project-links a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .projects-carousel {
+    gap: 22px;
+  }
+
+  .project-card {
+    padding: 1.75rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .projects-carousel {
+    gap: 18px;
+    padding: 4px 4px 12px;
+  }
+
+  .project-card {
+    padding: 1.4rem;
+  }
+
+  .project-icon {
+    font-size: 2.2rem;
+  }
+
+  .project-links {
+    gap: 0.6rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .projects-carousel {
+    gap: 16px;
+  }
+
+  .project-card {
+    padding: 1.15rem;
+  }
+
+  .project-tags span {
+    font-size: 0.65rem;
+  }
+
+  .btn-sm {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.75rem;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .btn-sm {
+    transition: none;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH PUBLICATION
+   Dark Navy + Cyan + Purple Glassmorphism
+   ========================================================= */
+
+.research-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.research-icon {
+  flex: 0 0 auto;
+  font-size: 3rem;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.research-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-year {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--purple);
+}
+
+.research-content h3 {
+  margin-bottom: 0.8rem;
+
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--white);
+  overflow-wrap: anywhere;
+}
+
+.research-content p {
+  margin-bottom: 1rem;
+
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.research-content p strong {
+  color: var(--white);
+}
+
+.research-publication {
+  font-size: 0.82rem !important;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.research-tags span {
+  padding: 0.25rem 0.7rem;
+  border-radius: 50px;
+
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+
+  background: rgba(0, 245, 255, 0.07);
+  border: 1px solid rgba(0, 245, 255, 0.15);
+  color: var(--cyan);
+}
+
+.research-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .research-card {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .research-icon {
+    font-size: 2.5rem;
+  }
+
+  .research-content h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-card {
+    padding: 1.15rem;
+  }
+
+  .research-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .research-tags span {
+    font-size: 0.65rem;
+  }
+}
+
+
+
+
 /* ── RESET ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -990,6 +1349,8 @@ footer {
   border: 1px solid var(--pink);
   color: var(--pink);
 }
+
+
 
 /* ── VISIBILITY FIXES ── */
 .section { position: relative; z-index: 2; }

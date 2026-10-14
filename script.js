@@ -98,13 +98,15 @@ function closeMobile() {
 }
 
 // ── TYPING EFFECT ──
+
 const phrases = [
-  'Building secure, intelligent systems.',
-  'ML Engineer | 99.9% Phishing Accuracy.',
+  'Building scalable, production-ready applications.',
   'Full Stack Developer | React & Node.js.',
-  'Cybersecurity Researcher & Builder.',
-  'Turning data into impactful solutions.'
+  'AI/ML Engineer | Building intelligent solutions.',
+  'Data Analyst | Turning data into insights.',
+  'Software Engineer | Solving real-world problems.'
 ];
+
 let phraseIndex = 0, charIndex = 0, isDeleting = false;
 const typingEl = document.getElementById('typingText');
 
